@@ -123,6 +123,14 @@ function App() {
           )}
         </span>
       </div>
+      <section className="hero-section">
+        <div className="hero-main">
+          Get <span className="desc-highlight">notified</span> when your battery leaves your preferred <span className="desc-highlight">range</span>.
+        </div>
+        <div className="hero-sub">
+          <span className="desc-highlight">Boost battery health</span> by avoiding <span className="desc-highlight">deep discharges</span> and <span className="desc-highlight">overcharging</span>.
+        </div>
+      </section>
       <div className="battery-container elegant-battery battery-glow">
         <div className="battery-body">
           <div

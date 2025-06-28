@@ -390,3 +390,24 @@
   color: #ff6e6e;
   text-shadow: 0 1px 6px #ff6e6e55;
 }
+
+.app-description {
+  margin: 1.2rem auto 0 auto;
+  font-size: 1.08rem;
+  color: #bde0fe;
+  max-width: 420px;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-family: inherit;
+}
+
+.desc-highlight {
+  color: #00b4d8;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00b4d822 60%, #4361ee22 100%);
+  padding: 0 0.15em;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px #00b4d822;
+  transition: background 0.2s, color 0.2s;
+}
