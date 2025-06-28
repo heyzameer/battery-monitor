@@ -117,9 +117,13 @@ function App() {
             />
           </svg>
         </span>
-        <span className="title-text">Battery Monitor</span>
+        <span className="title-text heading-pop">
+          {'Battery Monitor'.split('').map((ch, i) =>
+            ch === ' ' ? <span key={i}>&nbsp;</span> : <span key={i} className="pop-letter">{ch}</span>
+          )}
+        </span>
       </div>
-      <div className="battery-container elegant-battery">
+      <div className="battery-container elegant-battery battery-glow">
         <div className="battery-body">
           <div
             className="battery-fill"
@@ -136,6 +140,13 @@ function App() {
             <span className="charging-icon" title="Charging">
               <i className="ri-battery-2-charge-line"></i>
             </span>
+          )}
+        </p>
+        <p className="charging-status">
+          {isCharging ? (
+            <span className="charging-on">Charging</span>
+          ) : (
+            <span className="charging-off"></span>
           )}
         </p>
       </div>

@@ -350,3 +350,43 @@
   color: #fff;
   vertical-align: middle;
 }
+
+.heading-pop .pop-letter {
+  display: inline-block;
+  transition: transform 0.18s cubic-bezier(.4,2,.6,1), color 0.18s;
+  will-change: transform, color;
+  cursor: pointer;
+}
+
+.heading-pop .pop-letter:hover {
+  transform: translateY(-7px) scale(1.25) rotate(-7deg);
+  color: #00b4d8;
+  text-shadow: 0 2px 12px #00b4d8, 0 0px 2px #fff;
+  z-index: 1;
+}
+
+.battery-glow {
+  transition: box-shadow 0.25s;
+}
+
+.battery-glow:hover {
+  box-shadow: 0 0 24px 6px #00b4d8cc, 0 0 2px #fff;
+  z-index: 2;
+}
+
+.charging-status {
+  font-size: 1.08rem;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.charging-on {
+  color: #00e676;
+  text-shadow: 0 1px 6px #00e67655;
+}
+
+.charging-off {
+  color: #ff6e6e;
+  text-shadow: 0 1px 6px #ff6e6e55;
+}
