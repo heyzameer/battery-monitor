@@ -1,12 +1,16 @@
-# React + Vite
+# Battery Monitor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Battery Monitor is a simple React application built with Vite that shows your device's battery status in real time. The app notifies you when it's time to connect or disconnect your charger, helping you maintain healthy charging habits. You can set your own minimum and maximum battery percentage range to receive notifications when your battery goes outside your preferred range.
 
-Currently, two official plugins are available:
+## Why is this app useful for battery health?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Monitoring your battery health is essential for prolonging the lifespan of your device. By using Battery Monitor, you can:
 
-## Expanding the ESLint configuration
+- **View battery status:** Instantly see your current battery level, charging status, and estimated time remaining.
+- **Custom notifications:** Select custom battery percentage ranges to get notified when your battery goes out of your preferred range, so you know when to connect or disconnect your charger.
+- **Avoid deep discharges:** Get notified when your battery is low to prevent it from draining completely, which can reduce battery capacity over time.
+- **Optimize charging habits:** See when your battery is fully charged and unplug it to avoid overcharging, which can degrade battery health.
+- **Track charging cycles:** Understand your charging patterns and make adjustments to extend battery longevity.
+- **Stay informed:** Real-time updates help you make better decisions about when to charge or unplug your device.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This app is especially useful for laptops and portable devices where battery health directly impacts usability and performance.
