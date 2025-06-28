@@ -34,7 +34,7 @@ function App() {
   // Only check alarm when battery level changes
   useEffect(() => {
     if (batteryLevel === null) return;
-    if ((batteryLevel < min || batteryLevel > max) && isCharging) {
+    if (batteryLevel < min || (batteryLevel > max) && isCharging) {
       if (audioRef.current && audioRef.current.paused) {
         audioRef.current.play();
         setAlarmPlaying(true);
