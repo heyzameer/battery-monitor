@@ -34,7 +34,7 @@ function App() {
   // Only check alarm when battery level changes
   useEffect(() => {
     if (batteryLevel === null) return;
-    if (batteryLevel < min || batteryLevel > max) {
+    if ((batteryLevel < min || batteryLevel > max) && isCharging) {
       if (audioRef.current && audioRef.current.paused) {
         audioRef.current.play();
         setAlarmPlaying(true);
@@ -47,7 +47,7 @@ function App() {
       setAlarmPlaying(false);
     }
     // eslint-disable-next-line
-  }, [batteryLevel, alarmSound]); // depend on alarmSound too
+  }, [batteryLevel, alarmSound, isCharging]); // add isCharging to dependencies
 
   useEffect(() => {
     let battery;
