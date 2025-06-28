@@ -45,7 +45,7 @@
 }
 
 .battery-container {
-  margin: 2rem auto;
+  margin: 1.2rem auto;
   width: 120px;
   position: relative;
 }
@@ -55,11 +55,11 @@
   border-radius: 18px;
   background: rgba(20, 30, 48, 0.5);
   box-shadow: 0 4px 32px #00b4d822;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.2rem 1.2rem 1rem 1.2rem; /* reduced padding */
 }
 
 .battery-body {
-  height: 200px;
+  height: 140px; /* reduced from 200px */
   width: 60px;
   border: 4px solid #3a86ff;
   border-radius: 12px;
